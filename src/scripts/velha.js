@@ -172,6 +172,18 @@ function solicitarPecaJogador(numeroJogador) {
 
 function exibirAlertaVencedor(nome) {
     alert("O vencedor é: " + nome);
+
+    // Função para exibir a chuva de confetes
+    function mostrarConfetes() {
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+    }
+
+    // Chama a função de confetes
+    mostrarConfetes();
 }
 
 
